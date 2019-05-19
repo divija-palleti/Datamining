@@ -1,0 +1,23 @@
+///////////////READ CSV FILE//////////////
+
+df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data', header=None)
+
+///////////// LABEL CHANGE////////////////////////////
+
+y = np.where(y == 'Iris-setosa', -1, 1)
+
+
+////////////GENERATE RANDOM NO///////////////////
+
+import random as rd
+rand=rd.randint(0,m-1)
+
+
+////////// ARRAY DECLARATION //////////////
+
+Centroids=np.array([]).reshape(n,0)
+
+/////////// READ EXCEL////////////////////
+
+df = pd.read_excel('File.xlsx', sheetname='Sheet1')
+df = df.values
